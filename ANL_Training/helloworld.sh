@@ -1,12 +1,9 @@
-clear
-ls
-# Remove old executables
-rm *.exe
-ls
 
-# COmpile and Build the executable
-/usr/bin/gcc -o omp_helloc -fopenmp helloworld.c
+# gcc
+gcc -o omp_hello -fopenmp helloworld.c 
 
-# export OMP_NUM_THREADS = 2
-# Run the executable
-./omp_helloc
+# num of threads 
+export OMP_NUM_THREADS=4
+
+# run the executable
+./omp_hello
